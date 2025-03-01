@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+<div>
+  <h1>Piano</h1>
+  <p>Click a key or press a keyboard key to play a note.</p>
+</div>
 
+<div id="piano">
+  <span class="key" id="C" data-note="C"><strong>C</strong></span>
+  <span class="key" id="D" data-note="D"><strong>D</strong></span>
+  <span class="key" id="E" data-note="E"><strong>E</strong></span>
+  <span class="key" id="F" data-note="F"><strong>F</strong></span>
+  <span class="key" id="G" data-note="G"><strong>G</strong></span>
+  <span class="key" id="A" data-note="A"><strong>A</strong></span>
+  <span class="key" id="B" data-note="B"><strong>B</strong></span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
